@@ -4,12 +4,12 @@ import NavBar from './components/NavBar.js'
 import About from './components/About.js'
 import TextArea from './components/TextArea.js'
 import Alert from './components/Alert';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 
 
@@ -74,14 +74,12 @@ function App() {
   }
 
   return (
-    <Router>
-      <NavBar name1="TextUtils" home="Home Page" mode={mode} toggleFunc={toggleButton} applyTheme={applytheme} />
+    <>
+      <NavBar name1="TextLOOT" home="Home Page" mode={mode} toggleFunc={toggleButton} applyTheme={applytheme} />
       <Alert alert={alert} />
-      <Routes>
-        <Route exact path='/' element={<TextArea showAlert={showAlert} />}></Route>
-        <Route exact path='/about' element={<About />}></Route>
-      </Routes>
-    </Router>
+      <TextArea showAlert={showAlert} />x
+
+    </>
   );
 }
 
