@@ -78,8 +78,8 @@ function App() {
       <NavBar name1="TextUtils" home="Home Page" mode={mode} toggleFunc={toggleButton} applyTheme={applytheme} />
       <Alert alert={alert} />
       <Routes>
-        <Route exact path='/TextUtils' element={<TextArea showAlert={showAlert} />}></Route>
-        <Route exact path='/TextUtils/about' element={<About />}></Route>
+        <Route exact path='/' element={<TextArea showAlert={showAlert} />}></Route>
+        <Route exact path='/about' element={<About />}></Route>
       </Routes>
     </Router>
   );

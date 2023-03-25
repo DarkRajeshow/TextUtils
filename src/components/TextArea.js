@@ -178,7 +178,7 @@ export default function TextArea(props) {
 
             <div className="container my-3">
                 <h2>Your Sentance has</h2>
-                <p>{words = (text.split([ ])[text.split([ ]).length - 1] === " ") || text.split([ ])[text.split([ ]).length - 1] === "" ? text.split([ ]).length - 1 : text.split([ ]).length} Words & {text.length} characters</p>
+                <p>{words = (text.split(" ")[text.split(" ").length - 1] === " ") || text.split(" ")[text.split(" ").length - 1] === "" ? text.split(" ").length - 1 : text.split(" ").length} Words & {text.length} characters</p>
                 <p>It takes around {Math.round((0.48 * words)) < 60 ? Math.round((0.48 * words)) : (Math.round((0.48 * words) / 60)) + " minutes and " + (Math.round((0.48 * words) % 60))} seconds to read.</p>
             </div>
             <div className="container my-4">
